@@ -1,0 +1,18 @@
+### GET Products
+### Search by name, isFeatured
+### Sort by name, price
+### Filter by Price or Rating
+### Pagination :  page or limit 
+GET http://localhost:5000/api/v1/products?numericFilters=price>30,price<40&sort=-price
+content-type: application/json
+
+{
+}
+
+
+### Create a new product
+POST http://localhost:5000/api/v1/products
+content-type: application/json
+
+{
+}

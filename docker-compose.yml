@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  node-store:
+    image: store_node_mongo_clean_arch
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/usr/src/app
